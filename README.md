@@ -1,4 +1,4 @@
-#UserDetail In Linux CMD Program
+# UserDetail In Linux CMD Program
 Show User Detail Of Linux User
 Run the executable file as root or set SUID file
 program use functions getpwnam and getsnam to get the detail of user
