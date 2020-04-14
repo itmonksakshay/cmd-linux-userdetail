@@ -32,7 +32,7 @@ void struct_print(struct passwd *s, struct spwd *shadowstruct){
 
 
 int main(int argc,char *argv){
-	char *username = malloc(2*sizeof(char *)) , *password = malloc(2*sizeof(char *)),*enpasswd =malloc(2*sizeof(char *));
+	char *username = malloc(2*sizeof(char *)) , *password ,*enpasswd;
 	struct spwd *shadowstruct; 
 	struct passwd *pw ;
 	printf("Enter UserName :");
@@ -52,6 +52,7 @@ int main(int argc,char *argv){
 	else{
 		printf("User Doesn't Exsist\n");
 	}
+	free(username);
 	return 0;
 
 }
